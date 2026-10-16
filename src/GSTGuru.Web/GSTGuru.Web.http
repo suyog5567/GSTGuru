@@ -1,0 +1,45 @@
+### Get all products
+GET https://localhost:7255/api/products
+
+### Get parties (customers)
+GET https://localhost:7255/api/parties?partyType=1&activeOnly=true
+
+### Quick tax calculation
+POST https://localhost:7255/api/tax/calculate
+Content-Type: application/json
+
+{
+  "sellerStateCode": "27",
+  "placeOfSupplyStateCode": "29",
+  "supplyCategory": 1,
+  "lines": [
+    {
+      "description": "Laptop",
+      "quantity": 1,
+      "unitPrice": 50000,
+      "gstRate": 18
+    }
+  ]
+}
+
+### Dashboard
+GET https://localhost:7255/api/reports/dashboard
+
+### HSN search
+GET https://localhost:7255/api/tax/hsn?search=laptop
+
+### AI status
+GET https://localhost:7255/api/chat/status
+
+### AI chat (offline)
+POST https://localhost:7255/api/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    { "role": "user", "content": "GST on ₹5000 at 18% intra-state" }
+  ]
+}
+
+### GSTR-1 CSV
+GET https://localhost:7255/api/reports/gstr1/export.csv

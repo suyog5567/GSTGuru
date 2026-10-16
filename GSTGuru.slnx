@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GSTGuru.Web/GSTGuru.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/GSTGuru.Tests/GSTGuru.Tests.csproj" />
+  </Folder>
+</Solution>

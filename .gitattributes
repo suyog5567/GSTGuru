@@ -1,0 +1,22 @@
+# Normalize line endings across platforms.
+* text=auto
+
+*.cs      text diff=csharp
+*.csproj  text
+*.slnx    text
+*.json    text
+*.md      text
+*.js      text
+*.css     text
+*.html    text
+*.http    text
+
+*.sh      text eol=lf
+*.bat     text eol=crlf
+
+# Binary-ish assets Git should never touch.
+*.png     binary
+*.jpg     binary
+*.gif     binary
+*.ico     binary
+*.pdf     binary

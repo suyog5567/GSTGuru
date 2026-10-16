@@ -1,0 +1,26 @@
+## .NET build output
+bin/
+obj/
+
+## Rider / VS
+.vs/
+.idea/
+*.user
+*.suo
+
+## Test / coverage
+[Tt]est[Rr]esult*/
+coverage*.json
+coverage*.xml
+
+## Local database files (if the provider is switched to SQLite)
+*.db
+*.db-shm
+*.db-wal
+
+## OS noise
+Thumbs.db
+.DS_Store
+
+## Local secrets / overrides
+appsettings.Local.json
